@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "timestamp": "2026-09-28 12:48:32",
+    "requests": 2000,
+    "concurrency": 50,
+    "users": 200,
+    "limit": 10
+  },
+  "results": [
+    {
+      "scenario": "sem_cache",
+      "requests": 2000,
+      "concurrency": 50,
+      "duration_s": 62.54,
+      "throughput_rps": 32.0,
+      "latency_ms": {
+        "min": 156.19,
+        "avg": 1523.15,
+        "p50": 1104.75,
+        "p95": 4292.14,
+        "p99": 6240.83,
+        "max": 8419.87
+      },
+      "status_codes": {
+        "200": 2000
+      },
+      "x_cache": {
+        "BYPASS": 2000
+      },
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "hit_ratio": 0.0,
+      "neo4j_queries": 2000
+    },
+    {
+      "scenario": "cache_frio",
+      "requests": 2000,
+      "concurrency": 50,
+      "duration_s": 31.92,
+      "throughput_rps": 62.7,
+      "latency_ms": {
+        "min": 52.51,
+        "avg": 773.99,
+        "p50": 486.12,
+        "p95": 2439.98,
+        "p99": 4195.56,
+        "max": 8176.87
+      },
+      "status_codes": {
+        "200": 2000
+      },
+      "x_cache": {
+        "MISS": 206,
+        "HIT": 1794
+      },
+      "cache_hits": 1794,
+      "cache_misses": 206,
+      "hit_ratio": 0.897,
+      "neo4j_queries": 206
+    },
+    {
+      "scenario": "cache_quente",
+      "requests": 2000,
+      "concurrency": 50,
+      "duration_s": 22.15,
+      "throughput_rps": 90.3,
+      "latency_ms": {
+        "min": 44.72,
+        "avg": 537.04,
+        "p50": 366.74,
+        "p95": 1592.57,
+        "p99": 2459.54,
+        "max": 3920.26
+      },
+      "status_codes": {
+        "200": 2000
+      },
+      "x_cache": {
+        "HIT": 2000
+      },
+      "cache_hits": 2000,
+      "cache_misses": 0,
+      "hit_ratio": 1.0,
+      "neo4j_queries": 0
+    }
+  ]
+}

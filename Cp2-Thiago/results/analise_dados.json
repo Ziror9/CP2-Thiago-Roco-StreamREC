@@ -1,0 +1,304 @@
+{
+  "gerado_em": "2026-09-28 16:53:22",
+  "eda": {
+    "usuarios": 200,
+    "filmes": 300,
+    "generos": 12,
+    "assistidos": 5736,
+    "avaliacoes": 4003,
+    "taxa_avaliacao": 0.698,
+    "densidade_matriz": 0.0667,
+    "esparsidade_matriz": 0.9333,
+    "nota_media": 3.813,
+    "nota_desvio": 1.115,
+    "dist_notas": {
+      "1": 201,
+      "2": 256,
+      "3": 958,
+      "4": 1265,
+      "5": 1323
+    },
+    "aval_por_usuario": {
+      "media": 20.0,
+      "mediana": 20.0,
+      "min": 7,
+      "max": 35
+    },
+    "aval_por_filme": {
+      "media": 13.3,
+      "mediana": 13.0,
+      "min": 2,
+      "max": 27
+    },
+    "share_top20_filmes": 0.3,
+    "generos_por_filme": 2.02,
+    "por_genero": {
+      "Fantasia": {
+        "filmes": 60,
+        "avaliacoes": 819,
+        "nota_media": 3.82
+      },
+      "Aventura": {
+        "filmes": 59,
+        "avaliacoes": 821,
+        "nota_media": 3.91
+      },
+      "Crime": {
+        "filmes": 58,
+        "avaliacoes": 817,
+        "nota_media": 3.85
+      },
+      "Comédia": {
+        "filmes": 53,
+        "avaliacoes": 822,
+        "nota_media": 3.88
+      },
+      "Suspense": {
+        "filmes": 51,
+        "avaliacoes": 751,
+        "nota_media": 3.93
+      },
+      "Animação": {
+        "filmes": 51,
+        "avaliacoes": 757,
+        "nota_media": 3.85
+      },
+      "Romance": {
+        "filmes": 50,
+        "avaliacoes": 739,
+        "nota_media": 3.87
+      },
+      "Terror": {
+        "filmes": 49,
+        "avaliacoes": 709,
+        "nota_media": 3.87
+      },
+      "Ação": {
+        "filmes": 45,
+        "avaliacoes": 637,
+        "nota_media": 3.81
+      },
+      "Documentário": {
+        "filmes": 44,
+        "avaliacoes": 556,
+        "nota_media": 3.86
+      },
+      "Drama": {
+        "filmes": 44,
+        "avaliacoes": 672,
+        "nota_media": 3.94
+      },
+      "Ficção Científica": {
+        "filmes": 41,
+        "avaliacoes": 585,
+        "nota_media": 3.85
+      }
+    }
+  },
+  "avaliacao": {
+    "usuarios_avaliados": 120,
+    "k": 10,
+    "holdout": 0.2,
+    "modelos": {
+      "Híbrido (produção)": {
+        "precision@10": 0.02,
+        "recall@10": 0.0781,
+        "hit_rate@10": 0.1833,
+        "ndcg@10": 0.0435,
+        "precision@10_ic95": 0.0079,
+        "recall@10_ic95": 0.0329,
+        "ndcg@10_ic95": 0.019,
+        "cobertura_catalogo": 0.623,
+        "vies_popularidade": 1.27,
+        "latencia_media_ms": 75.6
+      },
+      "Colaborativo": {
+        "precision@10": 0.0158,
+        "recall@10": 0.0639,
+        "hit_rate@10": 0.15,
+        "ndcg@10": 0.0413,
+        "precision@10_ic95": 0.007,
+        "recall@10_ic95": 0.0301,
+        "ndcg@10_ic95": 0.0207,
+        "cobertura_catalogo": 0.697,
+        "vies_popularidade": 1.27,
+        "latencia_media_ms": 44.1
+      },
+      "Conteúdo (gênero)": {
+        "precision@10": 0.02,
+        "recall@10": 0.0679,
+        "hit_rate@10": 0.175,
+        "ndcg@10": 0.0417,
+        "precision@10_ic95": 0.0082,
+        "recall@10_ic95": 0.0295,
+        "ndcg@10_ic95": 0.0199,
+        "cobertura_catalogo": 0.593,
+        "vies_popularidade": 1.2,
+        "latencia_media_ms": 57.6
+      },
+      "Popularidade": {
+        "precision@10": 0.0133,
+        "recall@10": 0.0583,
+        "hit_rate@10": 0.125,
+        "ndcg@10": 0.0396,
+        "precision@10_ic95": 0.0065,
+        "recall@10_ic95": 0.03,
+        "ndcg@10_ic95": 0.0208,
+        "cobertura_catalogo": 0.053,
+        "vies_popularidade": 1.57,
+        "latencia_media_ms": 156.5
+      },
+      "Aleatório": {
+        "precision@10": 0.0083,
+        "recall@10": 0.0343,
+        "hit_rate@10": 0.0833,
+        "ndcg@10": 0.0165,
+        "precision@10_ic95": 0.005,
+        "recall@10_ic95": 0.0233,
+        "ndcg@10_ic95": 0.0102,
+        "cobertura_catalogo": 0.983,
+        "vies_popularidade": 0.97,
+        "latencia_media_ms": 0.1
+      }
+    }
+  },
+  "ttl": {
+    "hipoteses": {
+      "usuarios": 200,
+      "horas": 8,
+      "acessos_por_hora_mediana": 8,
+      "invalidacoes_por_hora": 1.5
+    },
+    "resultados": [
+      {
+        "ttl": 0,
+        "hit_ratio": 0.0,
+        "consultas_neo4j_hora": 2024,
+        "requisicoes_hora": 2024,
+        "idade_media_s": 0.0
+      },
+      {
+        "ttl": 15,
+        "hit_ratio": 0.0649,
+        "consultas_neo4j_hora": 1892,
+        "requisicoes_hora": 2024,
+        "idade_media_s": 0.5
+      },
+      {
+        "ttl": 30,
+        "hit_ratio": 0.1204,
+        "consultas_neo4j_hora": 1780,
+        "requisicoes_hora": 2024,
+        "idade_media_s": 1.8
+      },
+      {
+        "ttl": 60,
+        "hit_ratio": 0.2051,
+        "consultas_neo4j_hora": 1608,
+        "requisicoes_hora": 2024,
+        "idade_media_s": 6.2
+      },
+      {
+        "ttl": 120,
+        "hit_ratio": 0.3196,
+        "consultas_neo4j_hora": 1377,
+        "requisicoes_hora": 2024,
+        "idade_media_s": 18.6
+      },
+      {
+        "ttl": 300,
+        "hit_ratio": 0.5079,
+        "consultas_neo4j_hora": 996,
+        "requisicoes_hora": 2024,
+        "idade_media_s": 74.6
+      },
+      {
+        "ttl": 600,
+        "hit_ratio": 0.6456,
+        "consultas_neo4j_hora": 717,
+        "requisicoes_hora": 2024,
+        "idade_media_s": 186.1
+      },
+      {
+        "ttl": 900,
+        "hit_ratio": 0.711,
+        "consultas_neo4j_hora": 585,
+        "requisicoes_hora": 2024,
+        "idade_media_s": 298.2
+      },
+      {
+        "ttl": 1800,
+        "hit_ratio": 0.7974,
+        "consultas_neo4j_hora": 410,
+        "requisicoes_hora": 2024,
+        "idade_media_s": 619.9
+      },
+      {
+        "ttl": 3600,
+        "hit_ratio": 0.8467,
+        "consultas_neo4j_hora": 310,
+        "requisicoes_hora": 2024,
+        "idade_media_s": 1125.2
+      }
+    ]
+  },
+  "desempenho": {
+    "meta": {
+      "timestamp": "2026-09-28 16:49:35",
+      "requests": 2000,
+      "concurrency": 50,
+      "users": 200,
+      "limit": 10
+    },
+    "cenarios": [
+      {
+        "cenario": "sem_cache",
+        "throughput_rps": 22.3,
+        "media": 2187.2,
+        "desvio": 1820.4,
+        "p50": 1612.8,
+        "p90": 4717.0,
+        "p95": 5823.3,
+        "p99": 8369.1,
+        "cv": 0.83,
+        "hits": 0,
+        "misses": 0,
+        "hit_ratio": 0.0,
+        "neo4j_queries": 2000,
+        "little_L": 48.8
+      },
+      {
+        "cenario": "cache_frio",
+        "throughput_rps": 49.0,
+        "media": 988.2,
+        "desvio": 1148.8,
+        "p50": 598.6,
+        "p90": 2343.8,
+        "p95": 3247.4,
+        "p99": 5579.5,
+        "cv": 1.16,
+        "hits": 1794,
+        "misses": 206,
+        "hit_ratio": 0.897,
+        "neo4j_queries": 206,
+        "little_L": 48.4
+      },
+      {
+        "cenario": "cache_quente",
+        "throughput_rps": 77.5,
+        "media": 623.3,
+        "desvio": 624.3,
+        "p50": 416.7,
+        "p90": 1402.6,
+        "p95": 1834.7,
+        "p99": 2985.2,
+        "cv": 1.0,
+        "hits": 2000,
+        "misses": 0,
+        "hit_ratio": 1.0,
+        "neo4j_queries": 0,
+        "little_L": 48.3
+      }
+    ]
+  }
+}
